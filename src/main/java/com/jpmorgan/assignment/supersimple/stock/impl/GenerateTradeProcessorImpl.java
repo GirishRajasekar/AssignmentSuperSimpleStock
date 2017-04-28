@@ -99,7 +99,8 @@ public class GenerateTradeProcessorImpl implements TradeProcessor {
 	    		tradeList.add(sellTrade);
 	    		logger.debug( symbol + " sold " + i + " shares for price:: $ " + randomValue);
 	    		
-	    		Thread.sleep(100);
+	    		//In orderd to have some deplay inbetween traded for stocks its added.
+	    		Thread.sleep(5);
 	    	}
 		}catch(InterruptedException e){
 			throw new SuperStockException("Error while generatng the random trade",e);
